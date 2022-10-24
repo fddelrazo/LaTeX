@@ -1,11 +1,11 @@
 # Ignore LaTeX aux files
-  *.gz
-  *.aux
-  *.bbl
-  *.blg
-  *.lof
-  *.log
-  *.lot
-  *.out
-  *.toc
+  Plantillas/Tesis/*.gz
+  Plantillas/Tesis/*.aux
+  Plantillas/Tesis/*.bbl
+  Plantillas/Tesis/*.blg
+  Plantillas/Tesis/*.lof
+  Plantillas/Tesis/*.log
+  Plantillas/Tesis/*.lot
+  Plantillas/Tesis/*.out
+  Plantillas/Tesis/*.toc
   
