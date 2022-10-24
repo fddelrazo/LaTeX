@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Uso de la clase ITTol-Tesis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{ITTol-Tesis}
+
+
+% Paquete usado para incluir texto falso (Lorem Ipsum) en el ejemplo 
+\usepackage{lipsum}					
+
+% Para links sin decoración
+%\hypersetup{colorlinks=false,allbordercolors=white}
+
+\titulo{Título de la Tesis}
+\autor{Autor de la Tesis}
+\grado{Maestro en Ciencias en Ciencias de la Ingeniería}
+\date{Octubre de 2018}
+\director{Director de la Tesis}
+\codirector{Codirector de la Tesis}                                         % Si existe un codirector
+%\tutor{Tutor}                                                                         % Si existe un tutor
+\autorizacion{autorizacion-Tesis}                                           % Archivo de Autorización de Tesis (imagen png, pdf,jpg) 
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+%\graphicspath{{./figuras/}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle	                                                                            % Crea la carátula
+\frontmatter
+
+\insertarautorizacion                                                            % Autorización
+
+\begin{dedicatoria}                                                              % Dedicatoria
+\begin{center}
+Escriba aquí su dedicatoria.
+\end{center}
+\end{dedicatoria}
+
+\begin{abstract}                                                                   % Resumen en español
+\lipsum[1-2]
+\end{abstract}
+
+\selectlanguage{english}                                                     % Resumen en inglés
+\begin{abstract}
+\lipsum[1-2]
+\end{abstract}
+
+\selectlanguage{spanish}
+\begin{agradecimientos}                                                     % Agradecimientos
+\begin{center}
+\textbf{AGRADECIMIENTOS}
+\end{center}
+\lipsum[1-3]
+\end{agradecimientos}
+
+\tableofcontents                                                                   % Índice de Contenido
+{\noskip\listoffigures}                                                            % Índice de Figuras
+{\noskip\listoftables}                                                             % Índice de Tablas
+
+\mainmatter
+
+%% Capítulos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{a_Introduccion}                                                       % Introducción.tex
+\include{b_FundamentosProblematica}                                % Fundamento.tex
+\include{c_EstadoArte}                                                         % Estado del Arte
+\include{d_Metodologia}                                                       % Metodología
+\include{e_Resultados}                                                          % Resultados
+\include{f_Conclusiones}							  % Conclusiones, Perspectivas
+
+%% Apéndices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix	
+\include{g_ApendiceA-Demostraciones}			          % Demostraciones
+\include{h_ApendiceB-Fuentes}			          	  % Diagramas
+
+\backmatter
+
+%% Bibliografía
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{apacite}
+\bibliography{biblio}								% Archivo .bib
+\nocite{*}
+
+\end{document}

@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Apéndice B / Código Fuente
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Preparación para el paquete listing
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+
+\lstset{ frame=Ltb,
+  framerule=0pt,
+  aboveskip=0.5cm,
+  framextopmargin=3pt,
+  framexbottommargin=3pt,
+  framexleftmargin=0.4cm,
+  framesep=0pt,
+  rulesep=.4pt,
+  backgroundcolor=\color{gray97},
+  rulesepcolor=\color{black},
+  %
+  stringstyle=\ttfamily,
+  showstringspaces = false,
+  basicstyle=\small\ttfamily,
+  commentstyle=\color{gray45},
+  keywordstyle=\bfseries,
+  %
+  numbers=left,
+  numbersep=15pt,
+  numberstyle=\tiny,
+  numberfirstline = false,
+  breaklines=true,
+}
+% Personalizando los ambientes para listing
+\lstnewenvironment{listing}[1][]{
+  \lstset{#1}\pagebreak[0]
+}
+{\pagebreak[0]}
+\lstdefinestyle{terminal}{			% Terminal
+  basicstyle=\scriptsize\bf\ttfamily,
+  backgroundcolor=\color{gray75},
+}
+\lstdefinestyle{C} {				% Código en C
+  language=C,
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Código Fuente}
+
+\section{Explicando un programa}
+\lipsum[1-2]
+
+\noindent
+Escribe el siguiente programa en un archivo llamado \texttt{hola.c}:
+
+\begin{lstlisting}[style=C]
+#include <stdio.h>
+
+int main(int argc, char* argv[]) 
+{
+    printf("Hola mundo!");
+}
+\end{lstlisting}
+
+\noindent
+Ahora compila usando \texttt{gcc}:
+
+\begin{listing}[style=terminal, numbers=none]
+$ gcc  -o hola hola.c
+\end{listing}
