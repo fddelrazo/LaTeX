@@ -1,0 +1,30 @@
+\babel@toc {spanish}{}
+\babel@toc {english}{}
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Ejemplo Figura}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ejemplo Link}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Fundamentos Teóricos y Problemática}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ejemplo Ecuación}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Ejemplo Cita Bibliográfica}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Tercera sección}{4}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Estado del Arte}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Primera sección }{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Ejemplos Citas Bibliográficas}{5}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Tercera sección}{6}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Metodología}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Primera sección}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Ejemplo Algoritmo}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Tercera sección}{8}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Resultados}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Ejemplo Tabla}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ejemplo Figura}{10}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Tercera sección}{10}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusiones y Perspectivas}{12}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Conclusiones}{12}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Perspectivas}{13}{section.6.2}%
+\contentsline {chapter}{\numberline {A}Demostraciones}{14}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Explicando Teorema}{14}{section.Alph1.1}%
+\contentsline {chapter}{\numberline {B}Código Fuente}{15}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}Explicando un programa}{15}{section.Alph2.1}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{16}{appendix*.7}%
