@@ -30,7 +30,7 @@ Dependiendo del sistema operativo, el primer paso sería instalar alguna de esta
 
 La creación de documentos en LaTeX se realiza empleando comandos que se aplican sobre un texto para indicar cómo aplicar un formato determinado a un texto. 
 
-El siguiente es un ejemplo para crear un documento simple:
+Por ejemplo, el siguiente código sirve para crear un documento simple:
 
 ~~~
 \documentclass{article} 
@@ -42,3 +42,4 @@ Este es mi primer documento escrito en LaTeX!!!
 \end{document}
 ~~~
 
+La primer línea indica, que el documento se va a escribir con el formato o estructura de un artículo. Después vemos el par de intrucciones *\begin{document}* y *\end{document}*, que indican el inicio y fin de documento que estamos escribiendo.
