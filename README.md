@@ -44,4 +44,4 @@ Una vez que se termine de editar el archivo, se presiona el botón **Componer**,
 
 1.  En la parte superior de esta página, localice y presione el botón **code**, y seleccione la opción **Download ZIP**.
 2.  Revise la carpeta de *Descargas*, ahí donde encontrará un archivo *.zip* que deberá descomprimir.  Dentro de la carpeta ubicará un folder con las plantillas para la escritura de *Tesis* y *Reporte* técnico o de investigación.
-
+3. 
