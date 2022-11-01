@@ -38,3 +38,5 @@ Una vez que se termine de editar el archivo, se presiona el botón **Componer**,
 
 ... para más info ver [Curso de LaTeX](https://matematicas.uclm.es/earanda/wp-content/uploads/downloads/2013/10/latex.pdf) :)
 
+## ¿Cómo uso las plantillas?
+
