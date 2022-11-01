@@ -19,6 +19,7 @@ Cusos y Manuales.
 Dependiendo del sistema operativo, puede instalar las siguiente aplicaciones: 
 
 * MiKTeX
+
     *[Instalación en Windows](https://miktex.org/howto/install-miktex) 
     * [Instalación en Linux](https://miktex.org/howto/install-miktex-unx)
 
