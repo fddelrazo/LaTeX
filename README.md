@@ -34,6 +34,7 @@ Por ejemplo en la imagen a la izquierda, usamos el editor **TeXShop** (incluido 
 
 Despúes Presionamos el botón **Componer**, para que **TeXShop** se encargue de transformar el código LaTeX en un documento **pdf**, como se aprecia en la figura de la derecha.
 
-![doctoSimpleLaTeX](https://user-images.githubusercontent.com/11287091/199326628-f0f4d3b2-1aa1-4a00-92df-e1e6641506c2.png)
+![doctoSimpleLaTeX](https://user-images.githubusercontent.com/11287091/199326937-af62aa29-c37f-44a9-954f-ec96ec22339e.png)
+
 
 
