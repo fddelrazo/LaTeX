@@ -28,5 +28,17 @@ Dependiendo del sistema operativo, el primer paso sería instalar alguna de esta
 
 ## ¿Cómo se escribe en LaTeX?
 
-A diferencia de los procesadores de textos que comúnmente utilizamos para la escritura de documentos (Por ejemplo: Word, PowerPoint, Pages, Keynote,  )
+La creación de documentos en LaTeX se realiza empleando comandos que se aplican sobre un texto para indicar cómo aplicar un formato determinado a un texto. 
+
+El siguiente es un ejemplo para crear un documento simple:
+
+~~~
+\documentclass{article} 
+
+\begin{document} 
+
+Este es mi primer documento escrito en LaTeX!!! 
+
+\end{document}
+~~~
 
