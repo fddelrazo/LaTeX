@@ -5,7 +5,7 @@ Plantillas en LaTeX, para la redacción de documentos en el Instituto Tecnológi
 * [Tesis](https://github.com/fddelrazo/LaTeX/blob/main/Plantillas/Tesis/Tesis-Ejemplo.pdf)
 * [Reporte de investigación](https://github.com/fddelrazo/LaTeX/blob/main/Plantillas/Reporte/Ejemplo_Reporte.pdf)
 
-## Referencias
+## Algunas referencias ...
 
 Cusos y Manuales.
 * [Curso de LaTeX](https://matematicas.uclm.es/earanda/wp-content/uploads/downloads/2013/10/latex.pdf)
@@ -14,9 +14,9 @@ Cusos y Manuales.
 * [CTAN - Comprehensive TEX Archive Network](https://www.ctan.org)
 * [Otras plantillas, Overleaf](https://es.overleaf.com/latex/templates)
 
-## ¿Qué software debo user?
+## ¿Qué software debo usar?
 
-Dependiendo del sistema operativo, puede instalar las siguiente aplicaciones: 
+Dependiendo del sistema operativo, el primer paso sería instalar alguna de estas aplicaciones: 
 
 * MiKTeX
     * [Instalación en Windows](https://miktex.org/howto/install-miktex) 
@@ -25,4 +25,8 @@ Dependiendo del sistema operativo, puede instalar las siguiente aplicaciones:
 * MacTeX
     * [Instalación en MacOS](https://tug.org/mactex/)
 
+
+## ¿Cómo se escribe en LaTeX?
+
+A diferencia de los procesadores de textos que comúnmente utilizamos para la escritura de documentos (Por ejemplo: Word, PowerPoint, Pages, Keynote,  )
 
