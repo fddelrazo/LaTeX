@@ -14,7 +14,7 @@ Cusos y Manuales.
 * [CTAN - Comprehensive TEX Archive Network](https://www.ctan.org)
 * [Otras plantillas, Overleaf](https://es.overleaf.com/latex/templates)
 
-## Referencias
+## ¿Qué software debo user?
 
 Dependiendo del sistema operativo, puede instalar las siguiente aplicaciones: 
 
