@@ -40,3 +40,5 @@ Una vez que se termine de editar el archivo, se presiona el botón **Componer**,
 
 ## ¿Cómo uso las plantillas?
 
+![descargaPlantillas](https://user-images.githubusercontent.com/11287091/199335537-e7152b77-3e70-4fb9-9197-1856cead93c8.png)
+
