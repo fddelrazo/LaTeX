@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Federico del RAZO LÓPEZ
+% TecNM / Instituto Tecnológico de TOLUCA / DEPI
+% 22-Oct-2022
+% 				
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Identification
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ITTol-Reporte}[2022/10/22]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preliminary declarations.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\PassOptionsToPackage{T1}{fontenc}
+\PassOptionsToPackage{utf8}{inputenc}
+\PassOptionsToPackage{english,spanish,mexico,es-noindentfirst}{babel}
+\PassOptionsToPackage{letterpaper,margin=2.5cm,left=3cm}{geometry}
+\PassOptionsToPackage{small,bf}{caption}
+\PassOptionsToPackage{colorlinks=true}{hyperref}
+\PassOptionsToPackage{table,xcdraw}{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{babel}
+\RequirePackage{enumerate}
+\RequirePackage[bf,sf,footnotesize,indent]{caption}
+\RequirePackage{comment}
+\RequirePackage{fancyhdr}
+\RequirePackage[letterpaper,top=3.5cm,left=2cm,right=2cm,bottom=2.5cm]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{booktabs}
+\RequirePackage[backref=page]{hyperref}
+\RequirePackage{times}      % font
+\RequirePackage{tikz}
+\RequirePackage{subcaption}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Opcionales si incluye 
+\RequirePackage{algorithm2e}			% Algoritmos
+\RequirePackage{amsthm}			% Teoremas
+\RequirePackage{listings}			        % Listado de Código Fuente (C/C++, Python, PHP)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% More declarations.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{./figuras/}}
+
+\setlength{\captionmargin}{0.8cm}
+\renewcommand{\captionfont}{\sffamily\footnotesize\bfseries}
+%\renewcommand{\captionlabeldelim}{.}
+\captionsetup{labelsep=period}
+
+\hypersetup{
+    colorlinks=true,
+    allcolors=blue,
+}
+
+\pagestyle{plain} 
+\pagenumbering{arabic} 
+\parindent 1.27cm
+\parskip   6pt
+\flushbottom
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Captions
+\renewcommand{\normalsize}{\@setfontsize\normalsize\@xiipt\@xivpt}
+\newcommand{\XIVPT}{\@setfontsize\xiiipt{14}{18}}
+\newcommand{\XVIPT}{\@setfontsize\xvipt{16}{20}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New Commands
+\newcounter{instn}
+\setcounter{instn}{1}
+\newcommand{\instnum}{\arabic{instn}}
+\newcommand{\inst}[1]{\ensuremath{^{#1}}}
+\newcommand{\nextinstitute}{\\\mbox{}\\[-6pt] \addtocounter{instn}{1}\inst{\instnum}}
+\newcommand{\email}[1]{\\\mbox{}\\[-6pt]\footnotesize\texttt{#1}}
+\renewcommand{\and}{, }
+
+\def\entitle#1{\gdef\@entitle{#1}}
+\def\@entitle{\@latex@warning@no@line{No \noexpand\subtitle given}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Items
+\setlength\leftmargini   {1.27cm}
+\setlength\leftmargin    {\leftmargini}
+\setlength\leftmarginii  {\leftmargini}
+\setlength\leftmarginiii {\leftmargini}
+\setlength\leftmarginiv  {\leftmargini}
+\setlength  \labelsep    {.5em}
+\setlength  \labelwidth  {\leftmargini}
+\addtolength\labelwidth  {-\labelsep}
+\def\@listI{\leftmargin\leftmargini
+            \parsep 0\p@ \@plus1\p@ \@minus\p@
+            \topsep 0\p@ \@plus2\p@ \@minus4\p@
+            \itemsep0\p@}
+\let\@listi\@listI
+\@listi
+\def\@listii {\leftmargin\leftmarginii
+              \labelwidth\leftmarginii
+              \advance\labelwidth-\labelsep
+              \topsep    0\p@ \@plus2\p@ \@minus\p@}
+\def\@listiii{\leftmargin\leftmarginiii
+              \labelwidth\leftmarginiii
+              \advance\labelwidth-\labelsep
+              \topsep    0\p@ \@plus\p@\@minus\p@
+              \parsep    \z@
+              \partopsep \p@ \@plus\z@ \@minus\p@}
+              
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Secciones
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+                       {-6\p@ \@plus -4\p@ \@minus -4\p@}%
+                       {0\p@ \@plus 4\p@ \@minus 4\p@}%
+                       {\normalfont\XIVPT\bfseries\boldmath
+                        \rightskip=\z@ \@plus 8em\pretolerance=10000 }}
+
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                       {-6\p@ \@plus -4\p@ \@minus -4\p@}%
+                       {0\p@ \@plus 4\p@ \@minus 4\p@}%
+                       {\normalfont\normalsize\bfseries\boldmath
+                        \rightskip=\z@ \@plus 8em\pretolerance=10000 }}          
+
+\RequirePackage{titlesec}
+\titlelabel{\thetitle.\hspace{1ex}}           
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formato del Reporte
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First Page:  Institución, Proyecto, Autores, Direcciones
+\pagestyle{empty}
+\newcommand{\authortag}[1]{$^{#1}$}
+\def\address#1{\gdef\@address{#1}}
+
+\def\@maketitle{\newpage
+    \begin{minipage}{0.2\textwidth}	 
+        \hspace{-1cm}      
+        \includegraphics[width=0.9\linewidth]{logoTecNM}					% Encabezado
+    \end{minipage}    
+    \begin{minipage}{0.5\textwidth}	       
+        \hspace{-1cm}   
+	\centering{\Large{\textbf{Tecnológico Nacional de México}}}
+    \end{minipage}    
+    \begin{minipage}{0.2\textwidth}	 
+      \raggedleft{      
+        \includegraphics[width=0.6\linewidth]{escudoITTol}	
+      }															
+    \end{minipage}      
+
+   \begin{center}
+   \vspace*{-.7cm}
+   {\XVIPT\bf\@title\par}
+   \vglue 6pt plus 3pt minus 3pt
+  {\XIVPT\bf\proyecto\par}
+   \vglue 6pt plus 3pt minus 3pt
+  {\normalsize
+   \textbf{\begin{tabular}[t]{c}\@author\end{tabular}}\par}
+   \vglue 6pt plus 3pt minus 3pt
+  {\normalsize
+   \begin{tabular}[t]{c}\inst{\instnum}\@address\end{tabular}\par}
+   \vglue 6pt plus 3pt minus 3pt
+   \end{center}\par
+}
+\let\maketitleOLD\maketitle
+\renewcommand{\maketitle}{\maketitleOLD\thispagestyle{empty}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ambiente Resumen y Abstract
+\newenvironment{resumen}{%
+   \list{}{
+      \advance\topsep by6pt\relax%\small
+      \leftmargin=0.8cm
+      \labelwidth=\z@
+      \listparindent=\z@
+      \itemindent\listparindent
+      \rightmargin\leftmargin}
+   \item[\hskip\labelsep
+            \bfseries\itshape Resumen.]
+   \itshape}%
+   {\endlist}
+
+\renewenvironment{abstract}{%
+   \list{}{
+      \advance\topsep by6pt\relax%\small
+      \leftmargin=0.8cm
+      \labelwidth=\z@
+      \listparindent=\z@
+      \itemindent\listparindent
+      \rightmargin\leftmargin}
+   \item[\hskip\labelsep
+            \bfseries\itshape Abstract.]
+   \itshape}%
+   {\endlist}
+   
+   
+   
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Preparación para el paquete listing
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+
+\lstset{ frame=Ltb,
+  framerule=0pt,
+  aboveskip=0.5cm,
+  framextopmargin=3pt,
+  framexbottommargin=3pt,
+  framexleftmargin=0.4cm,
+  framesep=0pt,
+  rulesep=.4pt,
+  backgroundcolor=\color{gray97},
+  rulesepcolor=\color{black},
+  %
+  stringstyle=\ttfamily,
+  showstringspaces = false,
+  basicstyle=\small\ttfamily,
+  commentstyle=\color{gray45},
+  keywordstyle=\bfseries,
+  %
+  numbers=left,
+  numbersep=15pt,
+  numberstyle=\tiny,
+  numberfirstline = false,
+  breaklines=true,
+}
+% Personalizando los ambientes para listing
+\lstnewenvironment{listing}[1][]{
+  \lstset{#1}\pagebreak[0]
+}
+{\pagebreak[0]}
+\lstdefinestyle{terminal}{			% Terminal
+  basicstyle=\scriptsize\bf\ttfamily,
+  backgroundcolor=\color{gray75},
+}
+\lstdefinestyle{C} {				% Código en C
+  language=C,
+}
+
+
+   
+
+
