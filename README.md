@@ -36,4 +36,5 @@ Una vez que se termine de editar el archivo, se presiona el botón **Componer**,
 
 ![doctoSimpleLaTeX](https://user-images.githubusercontent.com/11287091/199326937-af62aa29-c37f-44a9-954f-ec96ec22339e.png)
 
+... para más info ver [Curso de LaTeX](https://matematicas.uclm.es/earanda/wp-content/uploads/downloads/2013/10/latex.pdf) :)
 
