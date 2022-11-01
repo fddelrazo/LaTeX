@@ -33,3 +33,7 @@ La creación de documentos en LaTeX se realiza empleando comandos que se aplican
 Por ejemplo en la imagen a la izquierda, usamos el editor **TeXShop** (incluido en MacTeX) para crear un archivo y lo salvamos con el nombre *documento.tex*, en donde la extensión *.tex* nos indica que se trata de código escrito en LaTeX. La primer línea indica, que el documento se va a escribir con el formato o estructura de un artículo. Después vemos el par de intrucciones *\begin{document}* y *\end{document}*, que indican el inicio y fin de documento que estamos escribiendo.
 
 Despúes Presionamos el botón **Componer**, para que **TeXShop** se encargue de transformar el código LaTeX en un documento **pdf**, como se aprecia en la figura de la derecha.
+
+![doctoSimpleLaTeX](https://user-images.githubusercontent.com/11287091/199326628-f0f4d3b2-1aa1-4a00-92df-e1e6641506c2.png)
+
+
