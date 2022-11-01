@@ -42,6 +42,6 @@ Una vez que se termine de editar el archivo, se presiona el botón **Componer**,
 
 ![descargaPlantillas](https://user-images.githubusercontent.com/11287091/199335537-e7152b77-3e70-4fb9-9197-1856cead93c8.png)
 
-1 Presionar el botón **code** y seleccionar la opción **Download ZIP**
-2 Revisar la carpeta de *Descargas*, en donde encontrará archivio *.zip* que deberá descomprimir.  Dentro de la carpeta encontrará un folder con las plantillas para la escritura de *Tesis* y *Reporte* técnico o de investigación.
+1   Presionar el botón **code** y seleccionar la opción **Download ZIP**
+2   Revisar la carpeta de *Descargas*, en donde encontrará archivio *.zip* que deberá descomprimir.  Dentro de la carpeta encontrará un folder con las plantillas para la escritura de *Tesis* y *Reporte* técnico o de investigación.
 
