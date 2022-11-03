@@ -40,5 +40,5 @@ Una vez que se termine de editar el archivo, se presiona el botón **Componer**,
 
 ## ¿Cómo uso las plantillas?
 
-1.- Primero las Descargo, [video...](https://youtu.be/wyI2LRzadtI)
+1.- Primero las Descargo, [ver video...](https://youtu.be/wyI2LRzadtI)
 
