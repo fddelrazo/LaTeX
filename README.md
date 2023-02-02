@@ -10,11 +10,10 @@ Plantillas en LaTeX, para la redacción de documentos en el Instituto Tecnológi
 Cusos y Manuales.
 
 
-\begin{equation}                                                     
-\mathrm{e}^{x} = \sum_{k=0}^{\infty} \frac{x^k}{k!} = 
+$$
+{e}^{x} = \sum_{k=0}^{\infty} \frac{x^k}{k!} = 
 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots
-\label{eq:taylor}
-\end{equation}
+$$
 
 * [Curso de LaTeX](https://matematicas.uclm.es/earanda/wp-content/uploads/downloads/2013/10/latex.pdf)
 * [The Not So Short Introduction to LaTeX](https://tobi.oetiker.ch/lshort/lshort.pdf)
