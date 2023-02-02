@@ -9,12 +9,6 @@ Plantillas en LaTeX, para la redacción de documentos en el Instituto Tecnológi
 
 Cusos y Manuales.
 
-
-$$
-{e}^{x} = \sum_{k=0}^{\infty} \frac{x^k}{k!} = 
-1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots
-$$
-
 * [Curso de LaTeX](https://matematicas.uclm.es/earanda/wp-content/uploads/downloads/2013/10/latex.pdf)
 * [The Not So Short Introduction to LaTeX](https://tobi.oetiker.ch/lshort/lshort.pdf)
 * [CervanTeX, otros manuales](http://www.cervantex.es/manuales)
